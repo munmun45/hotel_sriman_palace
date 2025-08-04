@@ -134,10 +134,10 @@ function sendEmail($bookingId, $status, $booking_id)
             $mail->Host = 'smtp.hostinger.com';
             $mail->Port = 587;
             $mail->SMTPAuth = true;
-            $mail->Username = 'no_reply@hotelbluesagar.in';
-            $mail->Password = ':L8#m&6qu7^G';
+            $mail->Username = 'no_reply@hotelsrimanpalace.in';
+            $mail->Password = 'Ul+8$>X#';
 
-            $mail->setFrom('no_reply@hotelbluesagar.in', 'hotel sriman palace');
+            $mail->setFrom('no_reply@hotelsrimanpalace.in', 'hotel sriman palace');
             $mail->addAddress($email);  // Send to guest email
             $mail->addCC('hotel.bluesagarpuri@gmail.com');
             $mail->isHTML(true);
