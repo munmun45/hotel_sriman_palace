@@ -1,3 +1,0 @@
-[27-Jul-2022 16:32:25 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home4/hotelsrimanpalace/public_html/admin/index.php on line 73
-[27-Jul-2022 16:32:32 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home4/hotelsrimanpalace/public_html/admin/index.php on line 73
-[27-Jul-2022 16:32:47 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home4/hotelsrimanpalace/public_html/admin/index.php on line 73
