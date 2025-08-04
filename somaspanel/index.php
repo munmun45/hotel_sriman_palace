@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-<<<<<<< HEAD
 
   <?= require("./config/meta.php") ?>
 
@@ -10,7 +9,6 @@
 
 <body>
 
-<<<<<<< HEAD
   <?= require("./config/header.php") ?>
   <?= require("./config/menu.php") ?>
 
@@ -500,7 +498,6 @@ WHERE date = ?"; // Exclude canceled bookings
 
 
 
-=======
 
 </body>
 

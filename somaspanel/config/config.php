@@ -1,9 +1,9 @@
 <?php
 // Database connection details
 $servername = "localhost"; // Your database host
-$username = "root";        // Your database username
-$password = "";            // Your database password
-$dbname = "hotel_sriman_palace"; // Your database name
+$username = "u112926345_sriman_main_db";        // Your database username
+$password = "+K#wn]g3Nl|";            // Your database password
+$dbname = "u112926345_sriman_main_db"; // Your database name
 
 
 // Create connection

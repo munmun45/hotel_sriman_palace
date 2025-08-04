@@ -214,10 +214,10 @@ if ($resultRooms && $resultRooms->num_rows > 0) {
                     $mail->Port = 587;
                     $mail->SMTPDebug = 0;
                     $mail->SMTPAuth = true;
-                    $mail->Username = 'no_reply@anjaliholidays.in';
-                    $mail->Password = 'e#0EkgkY';
+                    $mail->Username = 'no_reply@hotelsrimanpalace.in';
+                    $mail->Password = 'Ul+8$>X#';
 
-                    $mail->setFrom('no_reply@anjaliholidays.in', 'hotel sriman palace');
+                    $mail->setFrom('no_reply@hotelsrimanpalace.in', 'hotel sriman palace');
                     $mail->addAddress($email);
                     $mail->addCC('hotel.bluesagarpuri@gmail.com');
 
