@@ -184,7 +184,7 @@ h6 {
     font-weight: 500;
     line-height: 100%;
     font-family: "Outfit", sans-serif;
-    color: rgb(20 96 171)
+    color: rgb(78 10 25)
 }
 
 h1 {
@@ -311,7 +311,7 @@ h5 {
     font-size: 12px;
     letter-spacing: 2px;
     font-weight: 500;
-    color: rgb(20 96 171)
+    color: rgb(78 10 25)
 }
 
 @media screen and (max-width:768px) {
@@ -321,7 +321,7 @@ h5 {
 }
 
 .mil-suptitle.mil-light {
-    color: rgb(20 96 171);
+    color: rgb(78 10 25);
     background-color: rgb(250, 255, 255)
 }
 
@@ -410,7 +410,7 @@ blockquote {
     height: 40px;
     border-radius: 50%;
     background-color: rgb(250, 255, 255);
-    color: rgb(20 96 171);
+    color: rgb(78 10 25);
     cursor: pointer;
     font-weight: 400;
     display: -webkit-box;
@@ -460,7 +460,7 @@ blockquote {
 
 .mil-breadcrumbs ul li a {
     text-decoration: none;
-    color: rgb(20 96 171)
+    color: rgb(78 10 25)
 }
 
 .mil-breadcrumbs ul li:after {
@@ -500,7 +500,7 @@ blockquote {
     font-weight: 500;
     border-radius: 60px;
     border: none;
-    background-color: rgb(15, 55, 174);
+    background-color: rgb(78 10 25);
     color: rgb(250, 255, 255);
     white-space: nowrap;
     -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
@@ -553,7 +553,7 @@ blockquote {
     letter-spacing: 2px;
     font-weight: 500;
     border-radius: 60px;
-    color: rgb(20 96 171);
+    color: rgb(78 10 25);
     white-space: nowrap;
     -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
     transition: 0.4s cubic-bezier(0, 0, 0.3642, 1)
@@ -815,7 +815,7 @@ a.mil-link {
 .mil-loader-percent {
     margin-top: 28px;
     text-align: center;
-    color: rgb(20 96 171);
+    color: rgb(78 10 25);
     font-weight: 400
 }
 
@@ -859,7 +859,7 @@ a.mil-link {
     z-index: 98;
     width: 100%;
     border-radius: unset !important;
-    background-color: rgb(245, 249, 255);
+    background-color: rgb(255, 255, 255);
     -webkit-box-shadow: 0px 4px 20px rgba(32, 79, 94, 0.05);
     box-shadow: 0px 4px 20px rgba(32, 79, 94, 0.05);
     -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
@@ -1002,7 +1002,7 @@ a.mil-link {
     font-size: 12px;
     letter-spacing: 2px;
     font-weight: 500;
-    color: rgb(20 96 171)
+    color: rgb(78 10 25)
 }
 
 .mil-menu ul li.mil-current:before {
@@ -1095,7 +1095,8 @@ a.mil-link {
     -ms-flex-align: center;
     align-items: center;
     -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
-    transition: 0.4s cubic-bezier(0, 0, 0.3642, 1)
+    transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+    background-color: rgb(250, 255, 255);
 }
 
 @media screen and (max-width:1400px) {
@@ -1242,7 +1243,7 @@ a.mil-link {
     display: block;
     width: 24px;
     height: 2px;
-    background: rgb(20 96 171);
+    background: rgb(78 10 25);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-transition: inherit;
@@ -1863,7 +1864,7 @@ a.mil-link {
     letter-spacing: 2px;
     font-weight: 500;
     border-radius: 60px;
-    color: rgb(20 96 171);
+    color: rgb(78 10 25);
     white-space: nowrap
 }
 
@@ -1871,7 +1872,7 @@ a.mil-link {
     position: relative;
     font-family: "Outfit", sans-serif;
     font-size: 15px;
-    color: rgb(20 96 171);
+    color: rgb(78 10 25);
     padding: 0 20px;
     height: 60px;
     width: 100%;
@@ -1913,7 +1914,7 @@ a.mil-link {
     position: relative;
     font-family: "Outfit", sans-serif;
     font-size: 15px;
-    color: rgb(20 96 171);
+    color: rgb(78 10 25);
     padding: 20px 20px;
     height: 300px;
     width: 100%;
@@ -2030,7 +2031,7 @@ a.mil-link {
     font-size: 12px;
     letter-spacing: 2px;
     font-weight: 500;
-    color: rgb(20 96 171)
+    color: rgb(78 10 25)
 }
 
 .mil-service-card:hover .mil-img-frame img {
@@ -2279,7 +2280,7 @@ a.mil-link {
 
 .mil-card .mil-card-slider .mil-card-nav .mil-slider-btn.mil-card-prev {
     border-radius: 0 40px 40px 0;
-    color: rgb(20 96 171);
+    color: rgb(78 10 25);
     padding-right: 5px;
     -webkit-transform: translateX(-40px);
     transform: translateX(-40px)
@@ -2292,7 +2293,7 @@ a.mil-link {
 
 .mil-card .mil-card-slider .mil-card-nav .mil-slider-btn.mil-card-next {
     border-radius: 40px 0 0 40px;
-    color: rgb(20 96 171);
+    color: rgb(78 10 25);
     padding-left: 5px;
     -webkit-transform: translateX(40px);
     transform: translateX(40px)
@@ -2366,7 +2367,7 @@ a.mil-link {
 }
 
 .mil-card .mil-descr .mil-price {
-    color: rgb(20 96 171)
+    color: rgb(78 10 25)
 }
 
 .mil-card .mil-descr .mil-price .mil-number {
@@ -2416,7 +2417,7 @@ a.mil-link {
 }
 
 .mil-price {
-    color: rgb(20 96 171)
+    color: rgb(78 10 25)
 }
 
 .mil-price .mil-number {
@@ -2450,7 +2451,7 @@ a.mil-link {
 }
 
 .mil-parameters {
-    color: rgb(20 96 171);
+    color: rgb(78 10 25);
     background-color: rgb(250, 255, 255);
     border-radius: 15px;
     display: -webkit-box;
@@ -3418,7 +3419,7 @@ a.mil-link {
 .mil-room-nav .mil-slider-btn svg {
     width: 24px;
     height: 24px;
-    stroke: rgb(20 96 171)
+    stroke: rgb(78 10 25)
 }
 
 .mil-room-nav .mil-slider-btn:hover {
@@ -3475,7 +3476,7 @@ a.mil-link {
     font-size: 12px;
     letter-spacing: 2px;
     font-weight: 500;
-    color: rgb(20 96 171);
+    color: rgb(78 10 25);
     margin-right: 40px;
     background-color: rgb(250, 255, 255);
     padding: 2px 12px;
@@ -3641,7 +3642,7 @@ a.mil-link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: rgb(20 96 171);
+    color: rgb(78 10 25);
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -3840,7 +3841,7 @@ footer .mil-footer-content .mil-logo img {
     -ms-flex-align: center;
     align-items: center;
     text-decoration: none;
-    color: rgb(20 96 171);
+    color: rgb(78 10 25);
     font-weight: 500;
     letter-spacing: -1px;
     font-family: "Outfit", sans-serif;
@@ -3890,7 +3891,7 @@ footer .mil-footer-content .mil-logo img {
     font-size: 12px;
     letter-spacing: 2px;
     font-weight: 500;
-    color: rgb(20 96 171);
+    color: rgb(78 10 25);
     -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
     transition: 0.4s cubic-bezier(0, 0, 0.3642, 1)
 }
@@ -3916,7 +3917,7 @@ footer .mil-footer-content .mil-logo img {
 
 .mil-social-icons li a {
     background-color: rgb(213, 241, 241);
-    color: rgb(20 96 171);
+    color: rgb(78 10 25);
     width: 35px;
     height: 35px;
     border-radius: 50%;
