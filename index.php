@@ -38,10 +38,7 @@
 
         <section class="mil-banner">
 
-<video autoplay loop muted playsinline class="mil-shape video_index" style="width: 110%; top: 0%; left: 0%; object-fit: cover;">
-    <source src="./video/main2.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
+     <img src="https://s7ap1.scene7.com/is/image/incredibleindia/sri-jagannath-temple-puri-odisha-hero?qlt=82&ts=1726663775457" alt="" style="position: absolute; width: 110%; top: 0%; left: 0%; object-fit: cover;">
 
 
 <div class="container">
