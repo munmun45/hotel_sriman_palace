@@ -199,12 +199,12 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
             <tr>
               <td style="width: 50%; vertical-align: top; padding: 10px; border-right: 1px solid #ddd;">
                 <div style="font-size: 14px; line-height: 1.6;">
-                  <p style="font-weight: bold; font-size: 16px; margin-bottom: 10px; color: #2a2a2a;">hotel sriman palace:</p>
-                  <p style="margin: 0; color: #555;">Number: <span style="color: #000;">23456789</span></p>
-                  <p style="margin: 0; color: #555;">VAT: <span style="color: #000;">23456789</span></p>
-                  <p style="margin: 0; color: #555;">Address: <span style="color: #000;">6622 Abshire Mills</span></p>
-                  <p style="margin: 0; color: #555;">City: <span style="color: #000;">Port Orlofurt, 05820</span></p>
-                  <p style="margin: 0; color: #555;">Country: <span style="color: #000;">United States</span></p>
+                  <p style="font-weight: bold; font-size: 16px; margin-bottom: 10px; color: #2a2a2a;">Hotel Sriman Palace:</p>
+                  <p style="margin: 0; color: #555;">Number: <span style="color: #000;">9668732639</span></p>
+                  <p style="margin: 0; color: #555;">GST: <span style="color: #000;">N/A</span></p>
+                  <p style="margin: 0; color: #555;">Address: <span style="color: #000;">Goudabada Sahi, Near Chaitanya Saraswata Matha, Swargadwar, Puri, 752001, Puri, Odisha</span></p>
+                  <p style="margin: 0; color: #555;">City: <span style="color: #000;">Puri</span></p>
+                  <p style="margin: 0; color: #555;">Country: <span style="color: #000;">India</span></p>
                 </div>
               </td>
               <td style="width: 50%; vertical-align: top; padding: 10px; text-align: right;">
@@ -345,27 +345,12 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
       </div>
 
       <div class="px-14 text-sm text-neutral-700">
-        <p class="text-main font-bold">PAYMENT DETAILS</p>
-        <p>Banks of Banks</p>
-        <p>Bank/Sort Code: 1234567</p>
-        <p>Account Number: 123456678</p>
-        <p>Payment Reference: BRA-00335</p>
+        <p class="text-main font-bold">Scan To Pay</p>
+        <img src="../../img/qr.png" alt="QR Code" class="w-24 h-24">
+        
+
       </div>
 
-      <div class="px-14 py-10 text-sm text-neutral-700">
-        <p class="text-main font-bold">Notes</p>
-        <p class="italic">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries
-          for previewing layouts and visual mockups.</p>
-        </dvi>
-
-        <footer class="fixed bottom-0 left-0 bg-slate-100 w-full text-neutral-600 text-center text-xs py-3">
-          Supplier Company
-          <span class="text-slate-300 px-2">|</span>
-          info@company.com
-          <span class="text-slate-300 px-2">|</span>
-          +1-202-555-0106
-        </footer>
-      </div>
     </div>
 </body>
 

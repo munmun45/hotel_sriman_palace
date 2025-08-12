@@ -134,7 +134,8 @@ try {
         "Status",
         "Note",
         "Total Amount",
-        "Booking Date"
+        "Booking Date",
+        "GST Provided"
     ];
     fputcsv($output, $headers);
 
@@ -163,7 +164,8 @@ try {
             $row['status'],
             $row['note'],
             $row['amount'],
-            $row['date']
+            $row['date'],
+            isset($row['gst_provided']) && $row['gst_provided'] == 1 ? 'Yes' : 'No'
         ];
         fputcsv($output, $csvRow);
     }

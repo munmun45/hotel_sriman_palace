@@ -31,6 +31,7 @@
                         data-bs-toggle="modal"
                         data-bs-target="#add_new_booking">
                         <i class="bi bi-plus" style="font-size: 20px;"></i>
+                        Add Booking
                     </button>
 
 
@@ -284,8 +285,18 @@
                             <input type="number" class="form-control" id="off" name="off" >
                         </div>
 
+                         <!-- GST Checkbox -->
+                         <div class="col-md-6">
+                            <div class="form-check mt-4">
+                                <input class="form-check-input" type="checkbox" id="gstProvided" name="gstProvided" value="1" checked>
+                                <label class="form-check-label" for="gstProvided">
+                                    GST Information Provided
+                                </label>
+                            </div>
+                        </div>
+
                         <!-- Status Selection -->
-                        <div class="col-md-6">
+                        <div class="col-md-6" style="display: none;">
                             <label for="status" class="form-label">Status</label>
                             <select class="form-select" id="status" name="status" required>
                                 <option value="pending" selected>Pending</option>

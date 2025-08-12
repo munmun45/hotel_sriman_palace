@@ -357,6 +357,7 @@
                                             $payment_amount = $row['payment_amount'];
                                             $status = $row['status'];
                                             $room_no = $row['room_no'];
+                                            $gst_provided = $row['gst_provided'];
                                             $days = (strtotime($checkOutDate) - strtotime($checkInDate)) / (60 * 60 * 24);
                                             $note = "NOTE : " . $row['note'];
 
@@ -443,6 +444,20 @@
                                                             Rest Amount: <strong><i class="bi bi-currency-rupee"></i><?php echo $rest_amount; ?></strong>
                                                         </div>
                                                     <?php } ?>
+                                                    <div class="icon-text">
+                                                        <i class="bi bi-receipt"></i> <strong>GST:</strong> 
+                                                        <div class="form-check form-switch ms-2">
+                                                            <input class="form-check-input gst-toggle" type="checkbox" role="switch" 
+                                                                data-booking-id="<?php echo $bookingId; ?>" 
+                                                                <?php echo isset($row['gst_provided']) && $row['gst_provided'] == 1 ? 'checked' : ''; ?>
+                                                                id="gstToggle<?php echo $bookingId; ?>">
+                                                            <label class="form-check-label" for="gstToggle<?php echo $bookingId; ?>">
+                                                                <span class="gst-status-<?php echo $bookingId; ?> <?php echo isset($row['gst_provided']) && $row['gst_provided'] == 1 ? 'text-success' : 'text-warning'; ?>">
+                                                                    <?php echo isset($row['gst_provided']) && $row['gst_provided'] == 1 ? 'Yes' : 'No'; ?>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
 
                                                     <div class="icon-text">
                                                         <strong><?php echo $status_payment; ?></strong>
@@ -759,6 +774,62 @@ $(document).ready(function() {
                     });
                 }
             });
+        });
+        
+        // Handle GST toggle switches
+        $('.gst-toggle').change(function() {
+            var bookingId = $(this).data('booking-id');
+            var isChecked = $(this).prop('checked');
+            var newStatus = isChecked ? 1 : 0;
+            var statusText = isChecked ? 'Yes' : 'No';
+            var statusClass = isChecked ? 'text-success' : 'text-warning';
+            
+            // Show confirmation dialog
+            var confirmMessage = isChecked ? 
+                'Are you sure you want to mark GST as Yes?' : 
+                'Are you sure you want to mark GST as No?';
+                
+            var confirmToggle = confirm(confirmMessage);
+            
+            if (confirmToggle) {
+                // Show loading overlay
+                $('#loadingOverlay').show();
+                
+                // Send AJAX request to update GST status
+                $.ajax({
+                    type: 'POST',
+                    url: './process/update_gst_status.php',
+                    data: {
+                        booking_id: bookingId,
+                        gst_status: newStatus
+                    },
+                    dataType: 'json',
+                    success: function(response) {
+                        if (response.success) {
+                            // Update the status text and class
+                            $('.gst-status-' + bookingId)
+                                .text(statusText)
+                                .removeClass('text-success text-warning')
+                                .addClass(statusClass);
+                        } else {
+                            // If update failed, revert the toggle
+                            alert('Failed to update GST status: ' + response.message);
+                            $(this).prop('checked', !isChecked);
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        alert('Error updating GST status: ' + error);
+                        $(this).prop('checked', !isChecked);
+                    },
+                    complete: function() {
+                        // Hide loading overlay
+                        $('#loadingOverlay').hide();
+                    }
+                });
+            } else {
+                // User canceled, revert the toggle
+                $(this).prop('checked', !isChecked);
+            }
         });
     </script>
 
