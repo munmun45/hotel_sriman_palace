@@ -268,6 +268,7 @@
                                 <option value="Booking.com">Booking.com</option>
                                 <option value="Hotels.com">Hotels.com</option>
                                 <option value="Agoda">Agoda</option>
+                                <option value="Stay In Puri">Stay In Puri</option>
                                 <option value="Other">Other</option>
                             </select>
 
